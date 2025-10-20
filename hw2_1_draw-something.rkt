@@ -11,9 +11,7 @@
                   eye
                   (rectangle (/ r 2.5) 0 "solid" "transparent")
                   eye))
-  ;; create the mouth by overlaying two circles (a mask trick)
   (define mouth-big (ellipse (/ r 1.2) (/ r 2) "solid" "black"))
-  ;; combine eyes and mouth
   (define face-with-eyes (overlay/offset eyes
                                          0 (/ r 2.2)
                                          face))
